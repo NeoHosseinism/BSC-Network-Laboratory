@@ -4,7 +4,13 @@
 
 <br>
 <p align="center">
-    <img width="500" src="https://learningnetwork.cisco.com/servlet/rtaImage?eid=a0D6e00000soIs9&feoid=00N3i00000BnD8k&refid=0EM6e000005DkmQ" alt="Material Bread logo">
+    <img width="500" src="assets/01.png">
 </p>
 
-* 
+* کابل های کراس تا 100 متر جوابگو هستند ولی بهتر است در فاصله های بیشتر از 70 80 متر از آنها استفاده نشود.
+
+## مفهوم subnet mask
+
+# مواردی که ممکنه در محیط شبیه سازی مشکل ساز باشند
+* فعال کردن گزینه تاثیرات طول کابل در قسمت `prefrences`
+* فایل های ذخیره شده با ورژن های بالاتر پکت تریسر روی ورژن های پایین تر باز نمی شوند.

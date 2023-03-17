@@ -1,10 +1,21 @@
+<style>
+    @font-face {
+        font-family: "BNazanin";
+        src: url("assets/fonts/BNazanin.ttf")
+    }
+    
+    * {
+        font-family: "BNazanin"
+    }
+</style>
+
 # خلاصه ای از نکات مهم
 
 * دو دستگاهی که از یک خانواده هستند می بایست با کابل  `cross`  به یکدیگر وصل شوند.
 
 <br>
 <p align="center">
-    <img width="500" src="assets/01.png">
+    <img width="500" src="assets/pictures/01.png">
 </p>
 
 * کابل های کراس تا 100 متر جوابگو هستند ولی بهتر است در فاصله های بیشتر از 70، 80 متر از آنها استفاده نشود.

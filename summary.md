@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     @font-face {
         font-family: "BNazanin";
         src: url("assets/fonts/BNazanin.ttf")
@@ -7,7 +7,7 @@
     * {
         font-family: "BNazanin"
     }
-</style>
+</style> -->
 
 # خلاصه ای از نکات مهم
 
@@ -17,6 +17,7 @@
 <p align="center">
     <img width="500" src="assets/pictures/01.png">
 </p>
+<br>
 
 * کابل های کراس تا 100 متر جوابگو هستند ولی بهتر است در فاصله های بیشتر از 70، 80 متر از آنها استفاده نشود.
 

@@ -15,12 +15,20 @@
 3. `Router(config-if)# ip address 192.168.10.1 255.255.255.0`: Set the IP address.
 4. `Router(config-if)# no shutdown`: Turn on the interface.
 
-show: با استفاده از این دستور، می‌توانید اطلاعات مختلفی از دستگاه خود مانند تنظیمات فعلی، جداول مسیریابی و... را مشاهده کنید.
+## Set password and secret for `enable` mode of Router
+1. `Router# show running-config`: Show the current configuration.
+* `Router# show ip interface brief`: Show the IP address of all interfaces.
+2. `Router(config)# enable password 1234`: Set the password for `enable` mode.
+3. `Router(config)# enable secret 5678`: Set the password for `enable` mode (encrypted).
+* When both `enable password` and `enable secret` are set, the `enable secret` will be used.
+1. `Router(config)# no enable password`: For delete password use `no` before the command.
+2. `Router(config)# no enable secret`: For secret password use `no` before the command.
 
-ping: با استفاده از این دستور، می‌توانید از میزان دسترسی به یک دستگاه دیگر در شبکه مطمئن شوید.
+## Telnet
+1. `Router(config)# line vty 0 4`: Go to `Router(config-line)#`.
+2. `Router(config-line)# password 9090`: Set the password for `telnet`.
+3. `PC> telnet 192.168.10.1`: Connect to the router from PC (`192.168.10.1` is default gateway for PC).
+4. `Router> exit`: Exit from `Router>` to `PC>`.
+
 
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.
-
-shutdown: با استفاده از این دستور، می‌توانید یک رابط شبکه را غیرفعال کنید.
-
-copy: با استفاده از این دستور، می‌توانید فایل‌ها و تنظیمات را بین دستگاه و سایر دستگاه‌ها یا سرورها کپی کنید.

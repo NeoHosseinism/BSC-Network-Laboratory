@@ -20,7 +20,7 @@ Router(config-if)# n sh
 ```
 ## 2. Configure password for `enable` mode And `telnet`
 
-### 2.1 `enable` mode
+### 2-1 `enable` mode
 > **Long way**
 ```
 Router> enable
@@ -46,8 +46,8 @@ Router(config)# ena s 5678
 Router# sh r
 ```
 
-### 2.2 `Telnet`
-#### 2.2.1 Set password for `Telnet` in Router
+### 2-2 `Telnet`
+#### 2-2-1 Set password for `Telnet` in Router
 > **Long way**
 ```
 Router> enable
@@ -62,7 +62,7 @@ Router# conf t
 Router(config)# li vty 0 4
 Router(config-line)# pas 9090
 ```
-#### 2.2.2 Connect with `Telnet` from PC to Router
+#### 2-2-2 Connect with `Telnet` from PC to Router
 > **Long way**
 ```
 PC> telnet 192.168.10.1
@@ -78,4 +78,53 @@ Password: 9090
 Router> en
 Password: 5678
 Router> ex
+```
+### 3. Static Routing
+3-1 Set Hostname for Router
+> **Long way**
+```
+Router> enable
+Router# configure terminal
+Router# hostname 1
+R1(config)#
+```
+> **Short way**
+```
+Router> en
+Router# conf t
+Router(config)# h 1
+R1(config)#
+```
+#### 3-2 Create Connection between 2 Routers
+> **Long way**
+```
+Router# configure terminal
+Router(config)# hostname 1
+R1(config)# interface serial 0/0/0
+R1(config-if)# ip address 192.168.x.x 255.255.255.0
+R1(config-if)# no shutdown
+```
+> **Short way**
+```
+Router> en
+Router# conf t
+Router(config)# h 1
+R1(config)# in s 0/0/0
+R1(config-if)# ip ad 192.168.x.x 255.255.255.0
+R1(config-if)# n sh
+```
+### 3-3 Static Routing
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# ip route + destination Net-ID + destination SubnetMask + next Hop
+R1# show ip route
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ip route + destination Net-ID + destination SubnetMask + next Hop
+R1# sh ip route
 ```

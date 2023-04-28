@@ -30,5 +30,15 @@
 3. `PC> telnet 192.168.10.1`: Connect to the router from PC (`192.168.10.1` is default gateway for PC).
 4. `Router> exit`: Exit from `Router>` to `PC>`.
 
+## Create Connection between 2 Routers
+1. `Router(config)# hostname 1`: Set the name of the router to `R1`.
+2. `Router(config)# interface Serial 0/0/0`: Go to `Router(config-if)#`.
+3. `Router(config-if)# ip address 192.168.x.x 255.255.255.0`: Set the IP address for the interface.
+4. `Router(config-if)# no shutdown`: Turn on the interface.
+5. Do 1 to 4 Setps in another `Router`.
+   
+## Static Routing
+1. `R1(config)# ip route + destination Net-ID + destination SubnetMask + next Hop`: For set IP Routing for unknown destinations
+2. `R1# show ip route`: For check the routing table in the router.
 
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.

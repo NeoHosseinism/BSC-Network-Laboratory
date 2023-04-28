@@ -113,7 +113,7 @@ R1(config)# in s 0/0/0
 R1(config-if)# ip ad 192.168.x.x 255.255.255.0
 R1(config-if)# n sh
 ```
-### 3-3 Static Routing
+#### 3-3 Set IP route for Router
 > **Long way**
 ```
 R1> enable

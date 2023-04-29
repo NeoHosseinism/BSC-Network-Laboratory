@@ -42,4 +42,8 @@
 2. `R1# show ip route`: For check the routing table in the router.
 3. `R1(config)# no ip route + destination Net-ID + destination SubnetMask + next Hop`: For **DELTE** IP Routing for unknown destinations
 
+## Default Routing
+`R2(config)# ip route 0.0.0.0 0.0.0.0 + next Hop`: For set IP Routing for forward all requests to 1 next hop.
+
+
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.

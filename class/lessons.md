@@ -79,7 +79,7 @@ Router> en
 Password: 5678
 Router> ex
 ```
-### 3. Static Routing
+## 3. Static Routing
 3-1 Set Hostname for Router
 > **Long way**
 ```
@@ -95,7 +95,7 @@ Router# conf t
 Router(config)# h 1
 R1(config)#
 ```
-#### 3-2 Create Connection between 2 Routers
+### 3-2 Create Connection between 2 Routers
 > **Long way**
 ```
 Router# configure terminal
@@ -113,7 +113,7 @@ R1(config)# in s 0/0/0
 R1(config-if)# ip ad 192.168.x.x 255.255.255.0
 R1(config-if)# n sh
 ```
-#### 3-3 Set IP route for Router
+### 3-3 Set IP route for Router
 > **Long way**
 ```
 R1> enable
@@ -126,5 +126,20 @@ R1# show ip route
 R1> en
 R1# conf t
 R1(config)# ip route + destination Net-ID + destination SubnetMask + next Hop
+R1# sh ip route
+```
+## 4. Default Routing
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# ip route 0.0.0.0 0.0.0.0 + next Hop
+R1# show ip route
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ip route 0.0.0.0 0.0.0.0 + next Hop
 R1# sh ip route
 ```

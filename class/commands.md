@@ -40,5 +40,6 @@
 ## Static Routing
 1. `R1(config)# ip route + destination Net-ID + destination SubnetMask + next Hop`: For set IP Routing for unknown destinations
 2. `R1# show ip route`: For check the routing table in the router.
+3. `R1(config)# no ip route + destination Net-ID + destination SubnetMask + next Hop`: For **DELTE** IP Routing for unknown destinations
 
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.

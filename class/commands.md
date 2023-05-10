@@ -45,5 +45,8 @@
 ## Default Routing
 `R2(config)# ip route 0.0.0.0 0.0.0.0 + next Hop`: For set IP Routing for forward all requests to 1 next hop.
 
+## RIP
+`R1(config)# router rip`: For select the protocol RIP.
+`R1(config-router)# network {Net ID}`: For set all known Net IDs for each router.
 
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.

@@ -143,3 +143,18 @@ R1# conf t
 R1(config)# ip route 0.0.0.0 0.0.0.0 + next Hop
 R1# sh ip route
 ```
+## 5. RIP
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# router rip
+R1(config-router)# network {all known Net IDs} 
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ro r
+R1(config-router)# ne {all known Net IDs}
+```

@@ -158,3 +158,18 @@ R1# conf t
 R1(config)# ro r
 R1(config-router)# ne {all known Net IDs}
 ```
+## 6. EIGRP
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# router eigrp {as}
+R1(config-router)# network {all known Net IDs} {subnet masks}
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ro e {as}
+R1(config-router)# ne {all known Net IDs} {subnet masks}
+```

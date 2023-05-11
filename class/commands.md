@@ -49,4 +49,9 @@
 `R1(config)# router rip`: For select the protocol RIP.
 `R1(config-router)# network {Net ID}`: For set all known Net IDs for each router.
 
+## EIGRP
+`R1(config)# router eigrp 100`: For select `EIGRP` protocol with `as = 100`.
+`R1(config-router)# network 192.168.10.0 0.0.0.3`
+
+
 traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.

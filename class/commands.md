@@ -46,12 +46,16 @@
 `R2(config)# ip route 0.0.0.0 0.0.0.0 + next Hop`: For set IP Routing for forward all requests to 1 next hop.
 
 ## RIP
-`R1(config)# router rip`: For select the protocol RIP.
-`R1(config-router)# network {Net ID}`: For set all known Net IDs for each router.
+1. `R1(config)# router rip`: For select the protocol RIP.
+2. `R1(config-router)# network {Net ID}`: For set all known Net IDs for each router.
 
 ## EIGRP
-`R1(config)# router eigrp 100`: For select `EIGRP` protocol with `as = 100`.
-`R1(config-router)# network 192.168.10.0 0.0.0.3`
+1. `R1(config)# router eigrp 100`: For select `EIGRP` protocol with `as = 100`.
+2. `R1(config-router)# network 192.168.10.0 0.0.0.3`
 
+## Redistribution between Protocols
+`R1(config-router)# redisribute ${protocol}`: For set redistribution for another protocol.
 
-traceroute: با استفاده از این دستور، می‌توانید مسیریابی بسته‌های داده را از دستگاه فعلی تا مقصد مورد نظر پیگیری کنید.
+## OSPF
+1. `R1(config)# router ospf 100`: For select `OSPF` protocol with `as = 100`.
+2. `R1(config-router)# network ${net-id} ${wildcard-mask} area ${area-id}`: For set known Net ID for each Router's interface.

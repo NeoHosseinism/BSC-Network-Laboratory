@@ -173,3 +173,36 @@ R1# conf t
 R1(config)# ro e {as}
 R1(config-router)# ne {all known Net IDs} {subnet masks}
 ```
+
+## 7. OSPF
+### 7-1 Redistribution between protocols
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# router {protocol}
+R1(config-router)# redistribute {protocol}
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ro {protocol}
+R1(config-router)# r {protocol}
+```
+
+### 7-2 OSPF
+> **Long way**
+```
+R1> enable
+R1# configure terminal
+R1(config)# router ospf {as}
+R1(config-router)# network {all known Net IDs} {wildcard masks} area {area}
+```
+> **Short way**
+```
+R1> en
+R1# conf t
+R1(config)# ro o {as}
+R1(config-router)# ne {all known Net IDs} {wildcard masks} area {area}
+```

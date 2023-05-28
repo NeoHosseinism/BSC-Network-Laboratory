@@ -30,7 +30,7 @@
     * [9. تمرین `MultiArea OSPF`](summary.md#جلسه-نهم-31-02-1402-multiarea-ospf)
 
 - [دستورات تدریس شده برای محیط ترمینال به تفکیک موضوعات](lessons.md)
-  * [1. Configuring an IP address for an interface on a router and turn on that interface.](lessons.md#1-configuring-an-ip-address-for-an-interface-on-a-router-and-turn-on-that-interface)
+  <!-- * [1. Configuring an IP address for an interface on a router and turn on that interface.](lessons.md#1-configuring-an-ip-address-for-an-interface-on-a-router-and-turn-on-that-interface)
   * [2. Configure password for `enable` mode And `telnet`](lessons.md#2-configure-password-for-enable-mode-and-telnet)
   * [3. Static Routing](lessons.md#3-static-routing)
   * [4. Default Routing](lessons.md#4-default-routing)
@@ -38,7 +38,7 @@
   * [6. EIGRP](lessons.md#6-eigrp)
   * [7. OSPF](lessons.md#7-ospf)
 - [دستورات محیط ترمینال به همراه توضیح به زبان انگلیسی](commands.md)
-- [سناریو‌های احتمالی بروز خطا](error_cauing-scenarios.md)
+- [سناریو‌های احتمالی بروز خطا](error_cauing-scenarios.md) -->
 ## تمارین
 - به زودی
 

@@ -19,7 +19,24 @@
 - آشنایی با دستورات پایه‌ای دستگاه های شرکت Cisco
 ## جزوات
 - [خلاصه نکات مهم و توضیحات به تفکیک جلسات](summary.md)
-- [دستورات تدریس شده برای محیط ترمینال به تفکیک جلسات](lessons.md)
+    * [1. آشنایی با Router](summary.md#جلسه-اول-30-11-1401-آشنایی-با-router)
+    * [2.  آشنایی با پیاده سازی یک توپولوژی ساده تنظیم رمز عبور برای اجرای دستور enable و آشنایی با Telnet](summary.md#جلسه-دوم-07-12-1401-آشنایی-با-پیاده-سازی-یک-توپولوژی-ساده-تنظیم-رمز-عبور-برای-اجرای-دستور-enable-و-آشنایی-با-telnet)
+    * [3. مسیریابی دستی](summary.md#جلسه-سوم-14-12-1401-مسیریابی-دستی)
+    * [4. تعیین IPهای داخل یک زیر شبکه](summary.md#جلسه-چهارم-21-12-1401-تعیین-IPهای-داخل-یک-زیر-شبکه)
+    * [5. آدرس‌دهی پیش فرض `Default Routing`](summary.md#جلسه-پنجم-20-01-1402-آدرسدهی-پیش-فرض-default-routing)
+    * [6. آدرس‌دهی با پروتکل `RIP`](summary.md#جلسه-ششم-10-02-1402-آدرسدهی-با-پروتکل-rip)
+    * [7. آدرس‌دهی با پروتکل `EIGRP`](summary.md#جلسه-هفتم-17-02-1402-آدرسدهی-با-پروتکل-eigrp)
+    * [8. آدرس‌دهی ترکیبی و پروتکل `OSPF`](summary.md#جلسه-هشتم-24-02-1402-آدرسدهی-ترکیبی-و-پروتکل-ospf)
+    * [9. تمرین `MultiArea OSPF`](summary.md#جلسه-نهم-31-02-1402-multiarea-ospf)
+
+- [دستورات تدریس شده برای محیط ترمینال به تفکیک موضوعات](lessons.md)
+  * [1. Configuring an IP address for an interface on a router and turn on that interface.](lessons.md#1-configuring-an-ip-address-for-an-interface-on-a-router-and-turn-on-that-interface)
+  * [2. Configure password for `enable` mode And `telnet`](lessons.md#2-configure-password-for-enable-mode-and-telnet)
+  * [3. Static Routing](lessons.md#3-static-routing)
+  * [4. Default Routing](lessons.md#4-default-routing)
+  * [5. RIP](lessons.md#5-rip)
+  * [6. EIGRP](lessons.md#6-eigrp)
+  * [7. OSPF](lessons.md#7-ospf)
 - [دستورات محیط ترمینال به همراه توضیح به زبان انگلیسی](commands.md)
 - [سناریو‌های احتمالی بروز خطا](error_cauing-scenarios.md)
 ## تمارین

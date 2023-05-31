@@ -206,3 +206,65 @@ R1# conf t
 R1(config)# ro o {as}
 R1(config-router)# ne {all known Net IDs} {wildcard masks} area {area}
 ```
+
+## 8. VLAN
+### 8-1 Switch Configuration
+> **Long way**
+```
+Switch> enable
+Switch# show vlan
+Switch# configure terminal
+Switch(config)# vlan ${vlan-id}
+Switch(config)# name ${vlan-name}
+Switch(config)# interface fastethernet ${interface-id}
+Switch(config-if)# switchport access vlan ${vlan-id}
+Switch(config-if)# exit
+Switch(config)# interface fastethernet ${interface-id}
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# exit
+Switch(config)# show running-config
+Switch(config)# show vlan
+Switch(config)# show interfaces trunk
+```
+
+> **Short way**
+```
+Switch> en
+Switch# sh vlan
+Switch# conf t
+Switch(config)# vlan ${vlan-id}
+Switch(config)# name ${vlan-name}
+Switch(config)# in f ${interface-id}
+Switch(config-if)# sw ac v ${vlan-id}
+Switch(config-if)# ex
+Switch(config)# in f ${interface-id}
+Switch(config-if)# sw mo tr
+Switch(config-if)# ex
+Switch(config)# sh r
+Switch(config)# sh vlan
+Switch(config)# sh int tr
+```
+
+### 8-2 Router Configuration
+> **Long way**
+```
+Router> enable
+Router# configure terminal
+Router(config)# interface fastethernet ${interface-id}.${subinterface-id}
+Router(config-subif)# encapsulation dot1q ${vlan-id}
+Router(config-subif)# ip address ${ip-address} ${subnet-mask}
+Router(config-subif)# exit
+Router(config)# exit
+Router# show running-config
+```
+> **Short way**
+```
+Router> en
+Router# conf t
+Router(config)# in f ${interface-id}.${subinterface-id}
+Router(config-subif)# en dot ${vlan-id}
+Router(config-subif)# ip ad ${ip-address} ${subnet-mask}
+Router(config-subif)# ex
+Router(config)# ex
+Router# sh r
+```

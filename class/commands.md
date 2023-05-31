@@ -59,3 +59,20 @@
 ## OSPF
 1. `R1(config)# router ospf 100`: For select `OSPF` protocol with `as = 100`.
 2. `R1(config-router)# network ${net-id} ${wildcard-mask} area ${area-id}`: For set known Net ID for each Router's interface.
+
+## VLAN
+1. `Switch# show vlan`: Show all VLANs.
+2. `Switch# configure terminal`: Go to `Switch(config)#`.
+3. `Switch(config)# vlan ${vlan-id}`: Create a VLAN.
+4. `Switch(config)# name ${vlan-name}`: Set the name for the VLAN.
+5. `Switch(config)# interface fastEthernet ${interface-id}`: Go to `Switch(config-if)#`.
+6. `Switch(config-if)# switchport access vlan ${vlan-id}`: Set the VLAN for the interface.
+7. `Switch(config)# interface fastEthernet ${interface-id}`: Go to `Switch(config-if)#`.
+8. `Switch(config-if)# switchport mode trunk`: Set the interface to trunk mode.
+9. `Switch# show running-config`: Show the current configuration.
+10. `Switch# show vlan`: Show all VLANs.
+11. `Switch# show interfaces trunk`: Show all trunk interfaces.
+12. `Router(config)# interface fastEthernet ${interface-id} .${sub-interface-id}`: Go to `Router(config-subif)#`.
+13. `Router(config-subif)# encapsulation dot1Q ${vlan-id}`: Set the VLAN for the sub-interface.
+14. `Router(config-subif)# ip address ${ip-address} ${subnet-mask}`: Set the IP address for the sub-interface.
+15. `Router# show running-config`: Show the current configuration. 
